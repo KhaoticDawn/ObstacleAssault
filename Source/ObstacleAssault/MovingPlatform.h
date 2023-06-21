@@ -39,5 +39,8 @@ private:
 	UPROPERTY(EditAnywhere, Category="Moving Platform")
 		float MoveDistance = 100;
 
+	UPROPERTY(EditAnywhere, Category = "Rotate Platform")
+		FRotator RotationVelocity;
+
 		FVector StartLocation;
 };

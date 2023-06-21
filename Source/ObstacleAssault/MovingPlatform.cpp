@@ -51,7 +51,7 @@ void AMovingPlatform::MovePlatform(float DeltaTime)
 // Rotate platform in specified direction
 void AMovingPlatform::RotatePlatform(float DeltaTime)
 {
-	UE_LOG(LogTemp, Display, TEXT("Rotate will go here when ready"));
+	AddActorLocalRotation(RotationVelocity * DeltaTime);
 }
 
 // Ask if platform should return along path
